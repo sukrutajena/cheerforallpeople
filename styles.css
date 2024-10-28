@@ -1,0 +1,67 @@
+/* Apply a gradient background with smooth transitions */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #0038ff, #6f00ff, #8900ff, #b000ff, #d600ff);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Smooth background color transition animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+h1, h2 {
+  color: #ffeb3b; /* Bright yellow for headings */
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+strong {
+  color: #ffeb3b; /* Highlight key points */
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+}
