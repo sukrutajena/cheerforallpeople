@@ -1,3 +1,10 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+
 /* Apply a gradient background with smooth transitions */
 body {
   margin: 0;
@@ -30,7 +37,7 @@ body {
 
 /* Typography */
 h1, h2 {
-  color: #ffeb3b; /* Bright yellow for headings */
+  color: #fff; /* Bright yellow for headings */
   font-weight: bold;
 }
 
@@ -50,7 +57,7 @@ ul ul {
 }
 
 strong {
-  color: #ffeb3b; /* Highlight key points */
+  color: #fff; /* Highlight key points */
 }
 
 /* Responsive text sizing */
